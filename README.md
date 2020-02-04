@@ -1,14 +1,9 @@
 # MarkdownView
 
-[![CI Status](http://img.shields.io/travis/keitaoouchi/MArkdownView.svg?style=flat)](https://travis-ci.org/keitaoouchi/MarkdownView)
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Version](https://img.shields.io/cocoapods/v/MarkdownView.svg?style=flat)](http://cocoapods.org/pods/MarkdownView)
-[![License](https://img.shields.io/cocoapods/l/MarkdownView.svg?style=flat)](http://cocoapods.org/pods/MarkdownView)
 
-> MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.
-
-![GIF](https://github.com/michaelpeternell/MarkdownView/blob/master/sample.gif "GIF")
+> MarkdownView is a WKWebView based UI element, and internally use bootstrap and markdown-it.
 
 ## This is a fork
 
@@ -17,6 +12,8 @@ This is a fork of the [original library from keitaoouchi](https://github.com/kei
 - It doesn't include highlight.js and therefore doesn't have syntax highlighting.
     - Rationale: The size of the framework is reduced significantly.
     - Javascript size goes doen from 902KB to 130KB
+- Use may use it with [Carthage](https://github.com/Carthage/Carthage): Add this line to your Cartfile: `github "michaelpeternell/MarkdownView" ~> 1.7`
+- Maybe you can somehow make this fork work with [Cocoapods](https://cocoapods.org/) too, but I haven't tried.
 
 ## How to use
 
@@ -80,14 +77,15 @@ github "keitaoouchi/MarkdownView"
 for detail, please follow the [Carthage Instruction](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos)
 
 
-## Author
+## Authors
 
-keita.oouchi, keita.oouchi@gmail.com
+Original author: keita.oouchi, keita.oouchi@gmail.com
+
+Changes by: Michael Peternell (removed highlight.js)
 
 ## License
 
 [bootstrap](http://getbootstrap.com/) is licensed under [MIT license](https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE).  
-[highlight.js](https://highlightjs.org/) is licensed under [BSD-3-Clause license](https://github.com/isagalaev/highlight.js/blob/master/LICENSE).  
 [markdown-it](https://markdown-it.github.io/) is licensed under [MIT license](https://github.com/markdown-it/markdown-it/blob/master/LICENSE).  
 
 MarkdownView is available under the MIT license. See the LICENSE file for more info.
