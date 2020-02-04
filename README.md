@@ -8,7 +8,15 @@
 
 > MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.
 
-![GIF](https://github.com/keitaoouchi/MarkdownView/blob/master/sample.gif "GIF")
+![GIF](https://github.com/michaelpeternell/MarkdownView/blob/master/sample.gif "GIF")
+
+## This is a fork
+
+This is a fork of the [original library from keitaoouchi](https://github.com/keitaoouchi/MarkdownView) with these changes:
+
+- It doesn't include highlight.js and therefore doesn't have syntax highlighting.
+    - Rationale: The size of the framework is reduced significantly.
+    - Javascript size goes doen from 902KB to 130KB
 
 ## How to use
 

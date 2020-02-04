@@ -1,9 +1,6 @@
-import hljs from 'highlight.js'
 import MarkdownIt from 'markdown-it'
 import emoji from 'markdown-it-emoji'
 import './../css/bootstrap.css'
-import './../css/gist.css'
-import './../css/github.css'
 import './../css/index.css'
 
 window.showMarkdown = (percentEncodedMarkdown, enableImage = true) => {
@@ -17,10 +14,7 @@ window.showMarkdown = (percentEncodedMarkdown, enableImage = true) => {
   let markdown = new MarkdownIt({
     html: true,
     breaks: true,
-    linkify: true,
-    highlight: function(code){
-        return hljs.highlightAuto(code).value;
-    }
+    linkify: true
   })
 
   if (!enableImage) {
@@ -38,11 +32,4 @@ window.showMarkdown = (percentEncodedMarkdown, enableImage = true) => {
   tables.forEach((table) => {
     table.classList.add('table')
   })
-
-  let codes = document.querySelectorAll('pre code')
-
-  codes.forEach((code) => {
-    hljs.highlightBlock(code)
-  })
-
 }
