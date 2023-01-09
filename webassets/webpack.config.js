@@ -2,10 +2,27 @@ const webpack = require('webpack');
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+const parentFolder = (function(dirName) {
+    let path = dirName;
+    let pos = path.lastIndexOf("/");
+    if(pos < 0) {
+        return path;
+    }
+    if(pos == path.length - 1) {
+        path = path.substr(0, pos);
+        pos = path.lastIndexOf("/");
+    }
+    if(pos < 0) {
+        return path;
+    }
+    path = path.substr(path, pos);
+    return path;
+})(__dirname);
+
 module.exports = {
     entry: __dirname + "/src/js/index.js",
     output: {
-        path: __dirname + '/dist',
+        path: parentFolder + '/MarkdownView/dist',
         filename: 'main.js'
     },
     module: {

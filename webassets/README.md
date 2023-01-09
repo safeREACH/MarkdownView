@@ -10,3 +10,4 @@ Run these two commands:
     npm run build
 
 This will create the `dist` folder. That folder should also be checked in into the repository.
+The `dist` folder is under project root / `MarkdownView/dist`.
