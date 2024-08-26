@@ -83,7 +83,8 @@ open class MarkdownView: UIView {
             
             let configuration = WKWebViewConfiguration()
             configuration.userContentController = controller
-            
+            configuration.dataDetectorTypes = .phoneNumber
+         
             let wv = WKWebView(frame: self.bounds, configuration: configuration)
             wv.scrollView.isScrollEnabled = self.isScrollEnabled
             wv.translatesAutoresizingMaskIntoConstraints = false
