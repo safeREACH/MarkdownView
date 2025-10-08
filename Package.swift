@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "MarkdownView",
-            path: "Sources/MarkdownView",
+            path: "MarkdownView",
             exclude: [
                 "Resources/main.js.LICENSE.txt"
             ],
