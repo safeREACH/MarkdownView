@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MarkdownView",
     platforms: [
-        .iOS(.v12),
+        .iOS(.v13),
     ],
     products: [
         .library(
@@ -17,11 +17,15 @@ let package = Package(
     targets: [
         .target(
             name: "MarkdownView",
-            path: "MarkdownView",
+            path: "Sources/MarkdownView",
+            exclude: [
+                "Resources/main.js.LICENSE.txt"
+            ],
             resources: [
-                .copy("dist/markdownview.html"),
-                .copy("dist/main.css"),
-                .copy("dist/main.js")
+                .copy("Resources/styled.html"),
+                .copy("Resources/non_styled.html"),
+                .copy("Resources/main.js"),
+                .copy("Resources/main.css")
             ]
         )
     ]
