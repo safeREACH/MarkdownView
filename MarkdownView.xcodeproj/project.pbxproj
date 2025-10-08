@@ -10,6 +10,10 @@
 		4CD3C34D296C43C600EE9927 /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3C34A296C43C600EE9927 /* main.css */; };
 		4CD3C34E296C43C600EE9927 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3C34B296C43C600EE9927 /* main.js */; };
 		4CD3C34F296C43C600EE9927 /* markdownview.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CD3C34C296C43C600EE9927 /* markdownview.html */; };
+		70489C7F2E9662D9006F4E11 /* non_styled.html in Resources */ = {isa = PBXBuildFile; fileRef = 70489C7D2E9662D9006F4E11 /* non_styled.html */; };
+		70489C802E9662D9006F4E11 /* markdownview.html in Resources */ = {isa = PBXBuildFile; fileRef = 70489C7C2E9662D9006F4E11 /* markdownview.html */; };
+		70489C812E9662D9006F4E11 /* main.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 70489C7B2E9662D9006F4E11 /* main.js.LICENSE.txt */; };
+		70489C822E9662D9006F4E11 /* styled.html in Resources */ = {isa = PBXBuildFile; fileRef = 70489C7E2E9662D9006F4E11 /* styled.html */; };
 		FCA0501A1EC41211001DAD5F /* MarkdownView.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA050181EC41211001DAD5F /* MarkdownView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCFB6FD51EC4381600297562 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFB6FD21EC4381600297562 /* MarkdownView.swift */; };
 /* End PBXBuildFile section */
@@ -18,6 +22,10 @@
 		4CD3C34A296C43C600EE9927 /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		4CD3C34B296C43C600EE9927 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		4CD3C34C296C43C600EE9927 /* markdownview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = markdownview.html; sourceTree = "<group>"; };
+		70489C7B2E9662D9006F4E11 /* main.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.js.LICENSE.txt; sourceTree = "<group>"; };
+		70489C7C2E9662D9006F4E11 /* markdownview.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = markdownview.html; sourceTree = "<group>"; };
+		70489C7D2E9662D9006F4E11 /* non_styled.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = non_styled.html; sourceTree = "<group>"; };
+		70489C7E2E9662D9006F4E11 /* styled.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = styled.html; sourceTree = "<group>"; };
 		FCA050151EC41211001DAD5F /* MarkdownView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarkdownView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA050181EC41211001DAD5F /* MarkdownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkdownView.h; sourceTree = "<group>"; };
 		FCA050191EC41211001DAD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,14 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CD3C349296C43C600EE9927 /* dist */ = {
+		4CD3C349296C43C600EE9927 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				70489C7B2E9662D9006F4E11 /* main.js.LICENSE.txt */,
+				70489C7C2E9662D9006F4E11 /* markdownview.html */,
+				70489C7D2E9662D9006F4E11 /* non_styled.html */,
+				70489C7E2E9662D9006F4E11 /* styled.html */,
 				4CD3C34A296C43C600EE9927 /* main.css */,
 				4CD3C34B296C43C600EE9927 /* main.js */,
 				4CD3C34C296C43C600EE9927 /* markdownview.html */,
 			);
-			path = dist;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FCA0500B1EC41211001DAD5F = {
@@ -67,7 +79,7 @@
 				FCFB6FD21EC4381600297562 /* MarkdownView.swift */,
 				FCA050181EC41211001DAD5F /* MarkdownView.h */,
 				FCA050191EC41211001DAD5F /* Info.plist */,
-				4CD3C349296C43C600EE9927 /* dist */,
+				4CD3C349296C43C600EE9927 /* Resources */,
 			);
 			path = MarkdownView;
 			sourceTree = "<group>";
@@ -143,6 +155,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70489C7F2E9662D9006F4E11 /* non_styled.html in Resources */,
+				70489C802E9662D9006F4E11 /* markdownview.html in Resources */,
+				70489C812E9662D9006F4E11 /* main.js.LICENSE.txt in Resources */,
+				70489C822E9662D9006F4E11 /* styled.html in Resources */,
 				4CD3C34D296C43C600EE9927 /* main.css in Resources */,
 				4CD3C34F296C43C600EE9927 /* markdownview.html in Resources */,
 				4CD3C34E296C43C600EE9927 /* main.js in Resources */,
